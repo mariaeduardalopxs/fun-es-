@@ -1,0 +1,96 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d0b14;
+    background-image: radial-gradient(circle at 50% 50%, #29112d 0%, #0d0b14 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Principal (Card) */
+.card-container {
+    background: rgba(25, 18, 36, 0.85);
+    border: 1px solid rgba(255, 46, 151, 0.2);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 480px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 46, 151, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Tag Superior */
+.tag {
+    display: inline-block;
+    background: rgba(255, 46, 151, 0.1);
+    color: #ff2e97;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(255, 46, 151, 0.2);
+}
+
+/* Título */
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Área do Conteúdo/Mensagem */
+.mensagem {
+    color: #bfaec6;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    min-height: 100px; /* Evita que o card mude de tamanho drasticamente ao alterar o texto */
+    transition: color 0.3s ease;
+}
+
+/* Botão Interativo */
+.botao {
+    width: 100%;
+    background: linear-gradient(135deg, #ff2e97 0%, #ba24d5 100%);
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 46, 151, 0.4);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.botao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 46, 151, 0.6);
+}
+
+.botao:active {
+    transform: translateY(1px);
+}
+
+/* Rodapé */
+.copyright {
+    color: #4a3e56;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 24px;
+}
